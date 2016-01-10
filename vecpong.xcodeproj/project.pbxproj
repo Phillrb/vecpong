@@ -1,0 +1,260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		9943C68C1C418B9E006C5C4C /* read.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = read.txt; sourceTree = "<group>"; };
+		9943C68D1C418B9E006C5C4C /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		9943C68F1C418B9E006C5C4C /* crt.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = crt.s; path = src/crt.s; sourceTree = "<group>"; };
+		9943C6901C418B9E006C5C4C /* crt0.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = crt0.s; path = src/crt0.s; sourceTree = "<group>"; };
+		9943C6911C418B9E006C5C4C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = main.c; path = src/main.c; sourceTree = "<group>"; };
+		9943C6931C418B9E006C5C4C /* graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = graphics.h; path = include/graphics.h; sourceTree = "<group>"; };
+		9943C6941C418B9E006C5C4C /* vectrex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = vectrex.h; path = include/vectrex.h; sourceTree = "<group>"; };
+		9943C6951C418B9E006C5C4C /* music.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = music.h; path = include/music.h; sourceTree = "<group>"; };
+		9943C6961C418B9E006C5C4C /* notes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = notes.h; path = include/notes.h; sourceTree = "<group>"; };
+		9943C6971C418B9E006C5C4C /* sounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sounds.h; path = include/sounds.h; sourceTree = "<group>"; };
+		9943C6981C418B9E006C5C4C /* stdbool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stdbool.h; path = include/stdbool.h; sourceTree = "<group>"; };
+		9943C6991C418B9E006C5C4C /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = main.h; path = include/main.h; sourceTree = "<group>"; };
+		9943C6A21C418F2C006C5C4C /* tunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = tunes.h; path = include/tunes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		991D54261C41A48B002D3017 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				9943C68D1C418B9E006C5C4C /* build.sh */,
+			);
+			name = build;
+			sourceTree = "<group>";
+		};
+		9943C6851C418B9E006C5C4C = {
+			isa = PBXGroup;
+			children = (
+				9943C68B1C418B9E006C5C4C /* vecpong */,
+			);
+			sourceTree = "<group>";
+		};
+		9943C68B1C418B9E006C5C4C /* vecpong */ = {
+			isa = PBXGroup;
+			children = (
+				9943C68C1C418B9E006C5C4C /* read.txt */,
+				9943C68E1C418B9E006C5C4C /* game */,
+				9943C69F1C418D6F006C5C4C /* vec-c */,
+			);
+			path = vecpong;
+			sourceTree = "<group>";
+		};
+		9943C68E1C418B9E006C5C4C /* game */ = {
+			isa = PBXGroup;
+			children = (
+				9943C6991C418B9E006C5C4C /* main.h */,
+				9943C6911C418B9E006C5C4C /* main.c */,
+				9943C6931C418B9E006C5C4C /* graphics.h */,
+				9943C6A21C418F2C006C5C4C /* tunes.h */,
+			);
+			name = game;
+			sourceTree = "<group>";
+		};
+		9943C69F1C418D6F006C5C4C /* vec-c */ = {
+			isa = PBXGroup;
+			children = (
+				9943C6A11C418EAB006C5C4C /* bios */,
+				9943C6A01C418E0A006C5C4C /* helpers */,
+				991D54261C41A48B002D3017 /* build */,
+			);
+			name = "vec-c";
+			sourceTree = "<group>";
+		};
+		9943C6A01C418E0A006C5C4C /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9943C6981C418B9E006C5C4C /* stdbool.h */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		9943C6A11C418EAB006C5C4C /* bios */ = {
+			isa = PBXGroup;
+			children = (
+				9943C6941C418B9E006C5C4C /* vectrex.h */,
+				9943C68F1C418B9E006C5C4C /* crt.s */,
+				9943C6901C418B9E006C5C4C /* crt0.s */,
+				9943C6971C418B9E006C5C4C /* sounds.h */,
+				9943C6961C418B9E006C5C4C /* notes.h */,
+				9943C6951C418B9E006C5C4C /* music.h */,
+			);
+			name = bios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		9943C68A1C418B9E006C5C4C /* vecpong */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "${PROJECT_NAME}/build.sh ${PROJECT_NAME}";
+			buildConfigurationList = 9943C69C1C418B9E006C5C4C /* Build configuration list for PBXLegacyTarget "vecpong" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/bash;
+			dependencies = (
+			);
+			name = vecpong;
+			passBuildSettingsInEnvironment = 1;
+			productName = vecpong;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		9943C6861C418B9E006C5C4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Phill;
+				TargetAttributes = {
+					9943C68A1C418B9E006C5C4C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 9943C6891C418B9E006C5C4C /* Build configuration list for PBXProject "vecpong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9943C6851C418B9E006C5C4C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9943C68A1C418B9E006C5C4C /* vecpong */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		9943C69A1C418B9E006C5C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		9943C69B1C418B9E006C5C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		9943C69D1C418B9E006C5C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9943C69E1C418B9E006C5C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9943C6891C418B9E006C5C4C /* Build configuration list for PBXProject "vecpong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9943C69A1C418B9E006C5C4C /* Debug */,
+				9943C69B1C418B9E006C5C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9943C69C1C418B9E006C5C4C /* Build configuration list for PBXLegacyTarget "vecpong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9943C69D1C418B9E006C5C4C /* Debug */,
+				9943C69E1C418B9E006C5C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9943C6861C418B9E006C5C4C /* Project object */;
+}
