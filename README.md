@@ -1,7 +1,5 @@
 # vecpong
-A pong clone for the GCE / Milton Bradley Vectrex games console (circa 1982)
-Programmed in C with <a href="https://github.com/Phillrb/vec-c">Vec-C</a> and developed in Xcode for Mac OSX.
-The BIN file can be used in any Vectrex emulator and is available here: <a href="./vecpong/vecpong.bin">vecpong.bin</a>
+A complete 2-player pong clone for the GCE / Milton Bradley Vectrex games console (circa 1982). Programmed in C with <a href="https://github.com/Phillrb/vec-c">Vec-C</a> and developed in Xcode for Mac OSX. The BIN file can be used in any Vectrex emulator and is available here: <a href="./vecpong/vecpong.bin">vecpong.bin</a>
 
 <img src="./resources/gameplay1.png" alt="Gameplay" width="369" height="466">
 
